@@ -2,91 +2,108 @@
 
 {% block title %}Spendly — Track Every Rupee{% endblock %}
 
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}">
+{% endblock %}
+
 {% block content %}
 
 <section class="hero">
-    <div class="hero-inner">
-        <div class="hero-badge">Personal Finance Tracker</div>
-        <h1 class="hero-title">
-            Know where your<br>
-            <em>money goes</em>
-        </h1>
-        <p class="hero-subtitle">
-            Log expenses, understand your spending patterns,
-            and take control of your financial life —
-            one transaction at a time.
-        </p>
-        <div class="hero-actions">
-            <a href="{{ url_for('register') }}" class="btn-primary">Start tracking free</a>
-            <a href="{{ url_for('login') }}" class="btn-ghost">Sign in</a>
-        </div>
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Free to use · No credit card needed
     </div>
-    <div class="hero-visual">
-        <div class="mock-card">
-            <div class="mock-card-header">
-                <span class="mock-label">March 2026</span>
-                <span class="mock-total">₹12,450</span>
-            </div>
-            <div class="mock-bars">
-                <div class="mock-bar-row">
-                    <span class="mock-cat">Bills</span>
-                    <div class="mock-bar-track">
-                        <div class="mock-bar" style="width: 72%"></div>
-                    </div>
-                    <span class="mock-amt">₹4,500</span>
-                </div>
-                <div class="mock-bar-row">
-                    <span class="mock-cat">Food</span>
-                    <div class="mock-bar-track">
-                        <div class="mock-bar mock-bar-2" style="width: 52%"></div>
-                    </div>
-                    <span class="mock-amt">₹3,200</span>
-                </div>
-                <div class="mock-bar-row">
-                    <span class="mock-cat">Health</span>
-                    <div class="mock-bar-track">
-                        <div class="mock-bar mock-bar-3" style="width: 33%"></div>
-                    </div>
-                    <span class="mock-amt">₹2,050</span>
-                </div>
-                <div class="mock-bar-row">
-                    <span class="mock-cat">Transport</span>
-                    <div class="mock-bar-track">
-                        <div class="mock-bar mock-bar-4" style="width: 28%"></div>
-                    </div>
-                    <span class="mock-amt">₹1,800</span>
-                </div>
-            </div>
-        </div>
+    <h1 class="hero-title">
+      Track every rupee.<br>
+      <span class="hero-title-green">Know where it goes.</span>
+    </h1>
+    <p class="hero-subtitle">
+      Spendly helps you log expenses, spot patterns, and stay on budget — without the spreadsheet headache.
+    </p>
+    <div class="hero-actions">
+      <a href="{{ url_for('register') }}" class="btn-hero btn-primary">Create free account</a>
+      <a href="#" class="btn-hero btn-secondary">See how it works</a>
     </div>
+    <div class="dashboard-mockup">
+      <div class="mockup-browser">
+        <div class="browser-dots">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+        </div>
+        <div class="mockup-content">
+          <div class="stats-row">
+            <div class="stat-card">
+              <p class="stat-label">This month</p>
+              <p class="stat-value">₹18,240</p>
+              <p class="stat-change stat-change-positive">+12% vs last</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-label">Budget left</p>
+              <p class="stat-value">₹6,760</p>
+              <p class="stat-change stat-change-positive">43% remaining</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-label">Transactions</p>
+              <p class="stat-value">34</p>
+              <p class="stat-change">this month</p>
+            </div>
+          </div>
+          <div class="progress-section">
+            <div class="progress-card">
+              <div class="progress-row">
+                <span class="progress-label">Food</span>
+                <div class="progress-track">
+                  <div class="progress-bar progress-bar-orange" style="width: 70%"></div>
+                </div>
+              </div>
+              <div class="progress-row">
+                <span class="progress-label">Travel</span>
+                <div class="progress-track">
+                  <div class="progress-bar progress-bar-blue" style="width: 45%"></div>
+                </div>
+              </div>
+              <div class="progress-row">
+                <span class="progress-label">Bills</span>
+                <div class="progress-track">
+                  <div class="progress-bar progress-bar-purple" style="width: 35%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="features">
-    <div class="features-inner">
-        <div class="feature-card">
-            <div class="feature-icon">₹</div>
-            <h3 class="feature-title">Log expenses instantly</h3>
-            <p class="feature-body">Add any expense in seconds. Category, amount, date, description — all in one simple form.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">◎</div>
-            <h3 class="feature-title">Understand your patterns</h3>
-            <p class="feature-body">See exactly where your money goes with category breakdowns and monthly summaries.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">◷</div>
-            <h3 class="feature-title">Filter by time period</h3>
-            <p class="feature-body">View your spending for any date range — last week, last month, or a custom period.</p>
-        </div>
+  <div class="features-inner">
+    <div class="feature-card">
+      <div class="feature-icon">₹</div>
+      <h3 class="feature-title">Log expenses instantly</h3>
+      <p class="feature-body">Add any expense in seconds. Category, amount, date, description — all in one simple form.</p>
     </div>
+    <div class="feature-card">
+      <div class="feature-icon">◎</div>
+      <h3 class="feature-title">Understand your patterns</h3>
+      <p class="feature-body">See exactly where your money goes with category breakdowns and monthly summaries.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">◷</div>
+      <h3 class="feature-title">Filter by time period</h3>
+      <p class="feature-body">View your spending for any date range — last week, last month, or a custom period.</p>
+    </div>
+  </div>
 </section>
 
 <section class="cta-section">
-    <div class="cta-inner">
-        <h2 class="cta-title">Ready to take control?</h2>
-        <p class="cta-body">Join thousands of people who track their expenses with Spendly.</p>
-        <a href="{{ url_for('register') }}" class="btn-primary">Create free account</a>
-    </div>
+  <div class="cta-inner">
+    <h2 class="cta-title">Ready to take control?</h2>
+    <p class="cta-body">Join thousands of people who track their expenses with Spendly.</p>
+    <a href="{{ url_for('register') }}" class="btn-primary">Create free account</a>
+  </div>
 </section>
 
 {% endblock %}
