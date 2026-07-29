@@ -23,8 +23,19 @@
     </p>
     <div class="hero-actions">
       <a href="{{ url_for('register') }}" class="btn-hero btn-primary">Create free account</a>
-      <a href="#" class="btn-hero btn-secondary">See how it works</a>
+      <a href="javascript:void(0)" class="btn-hero btn-secondary" onclick="openModal()">See how it works</a>
     </div>
+  </div>
+
+  <!-- Video Modal -->
+  <div id="videoModal" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <div class="modal-body">
+        <iframe id="videoFrame" width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
     <div class="dashboard-mockup">
       <div class="mockup-browser">
         <div class="browser-dots">
