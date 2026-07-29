@@ -1,0 +1,176 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — Spendly{% endblock %}
+
+{% block content %}
+
+<main class="main-content">
+    <div class="terms-wrapper">
+        <h1 class="terms-title">Privacy Policy</h1>
+        <p class="terms-subtitle">Last updated: July 27, 2026</p>
+
+        <p class="terms-intro">
+            Spendly ("we," "our," or "us") respects your privacy and is committed to protecting your personal
+            information. This Privacy Policy explains how we collect, use, disclose, and safeguard your
+            data when you use our personal expense tracking service ("Service").
+        </p>
+
+        <section class="terms-section">
+            <h2 class="terms-section-title">1. Data We Collect</h2>
+            <p>
+                We collect information you provide directly when using the Service. This may include:
+            </p>
+            <ul class="terms-list">
+                <li><strong>Account Information:</strong> name, email address, and password when you register;</li>
+                <li><strong>Expense Data:</strong> amounts, categories, descriptions, dates, and any notes you add;</li>
+                <li><strong>Correspondence:</strong> any emails or messages you send us.</li>
+            </ul>
+        </section>
+
+        <section class="terms-section">
+            <h2 class="terms-section-title">2. How We Use Your Data</h2>
+            <p>
+                We use the information we collect to provide, maintain, and improve the Service:
+            </p>
+            <ul class="terms-list">
+                <li>Create and manage your account;</li>
+                <li>Store and display your expense entries;</li>
+                <li>Generate spending summaries and reports;</li>
+                <li>Respond to your inquiries and provide support;</li>
+                <li>Send you technical notices and updates;</li>
+                <li>Monitor and analyze usage trends to improve the Service.</li>
+            </ul>
+        </section>
+
+        <section class="terms-section">
+            <h2 class="terms-section-title">3. Data Storage and Security</h2>
+            <p>
+                Your data is stored in encrypted databases on secure servers. We implement industry-standard
+                security measures to protect your information from unauthorized access, use, or disclosure.
+            </p>
+            <p>
+                All data transmission between you and the Service is encrypted using HTTPS TLS protocols.
+                While we strive to use commercially acceptable means to protect your data, no method of
+                transmission over the Internet or electronic storage is 100% secure.
+            </p>
+        </section>
+
+        <section class="terms-section">
+            <h2 class="terms-section-title">4. Third-Party Services</h2>
+            <p>
+                We may use third-party service providers to help operate the Service, such as hosting
+                providers, payment processors, or analytics services. These providers have access to
+                your information only to perform tasks on our behalf and are obligated not to disclose
+                or use it for any other purpose.
+            </p>
+            <p>
+                The Service may contain links to third-party websites or services. We are not responsible
+                for the privacy practices of these third parties. This Privacy Policy applies only to
+                information collected by us.
+            </p>
+        </section>
+
+        <section class="terms-section">
+            <h2 class="terms-section-title">5. Data Retention</h2>
+            <p>
+                We retain your personal information for as long as your account is active. If you request
+                deletion of your account, we will permanently remove all your data from our systems
+                within 30 days of your request.
+            </p>
+        </section>
+
+        <section class="terms-section">
+            <h2 class="terms-section-title">6. Your Choices</h2>
+            <p>
+                You may access, update, or delete your personal information by logging into your account.
+                You can also contact us at support@spendly.app to request data deletion.
+            </p>
+        </section>
+
+        <section class="terms-section">
+            <h2 class="terms-section-title">7. Children's Privacy</h2>
+            <p>
+                The Service is not intended for use by persons under the age of 13. We do not knowingly
+                collect personal information from children under 13. If we become aware that we have
+                collected information from a child under 13, we will take steps to delete such
+                information as soon as possible.
+            </p>
+        </section>
+
+        <section class="terms-section">
+            <h2 class="terms-section-title">8. Changes to This Policy</h2>
+            <p>
+                We may update this Privacy Policy from time to time. If we make material changes, we will
+                provide at least 30 days' notice before the new policy takes effect. Continued use of
+                the Service after the posting of changes constitutes your acceptance of such changes.
+            </p>
+        </section>
+
+        <section class="terms-section">
+            <h2 class="terms-section-title">9. Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us at support@spendly.app</p>
+        </section>
+    </div>
+</main>
+
+<style>
+    .terms-wrapper {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 4rem 2rem;
+    }
+    .terms-title {
+        font-family: var(--font-display);
+        font-size: clamp(2rem, 4vw, 3rem);
+        color: var(--ink);
+        margin-bottom: 0.5rem;
+    }
+    .terms-subtitle {
+        color: var(--ink-muted);
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
+    }
+    .terms-intro {
+        color: var(--ink-muted);
+        line-height: 1.8;
+        max-width: 70ch;
+        margin-bottom: 3rem;
+    }
+    .terms-section {
+        margin-bottom: 2.5rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--border-soft);
+    }
+    .terms-section:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+    .terms-section-title {
+        font-family: var(--font-display);
+        font-size: 1.3rem;
+        color: var(--ink);
+        margin-bottom: 1rem;
+    }
+    .terms-section p {
+        color: var(--ink-muted);
+        line-height: 1.7;
+        margin-bottom: 1rem;
+    }
+    .terms-section p:last-child {
+        margin-bottom: 0;
+    }
+    .terms-list {
+        color: var(--ink-muted);
+        line-height: 1.7;
+        padding-left: 1.3rem;
+        margin-top: 0.5rem;
+    }
+    .terms-list li {
+        margin-bottom: 0.5rem;
+    }
+    .terms-list li:last-child {
+        margin-bottom: 0;
+    }
+</style>
+
+{% endblock %}
